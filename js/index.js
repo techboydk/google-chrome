@@ -15,3 +15,13 @@ document.addEventListener('scroll', ()=>{
     document.querySelector('.search-bar').classList.remove('sticky');
   }
 })
+const input = document.getElementById('search-text');
+input.addEventListener('keydown',(e)=>{
+  let keycode= e.keyCode;
+  if(keycode == 13 && input.value != '') {
+        let one = input.value;
+        let two = 'https://www.google.com/search?q=' + encodeURIComponent(one);
+        window.location = two;
+        input.value = ''
+    }
+});
