@@ -4,9 +4,7 @@
   font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
-body{
-  max-width: 500px;
-}
+
 *{
   margin: 0;
   padding: 0;
@@ -22,6 +20,8 @@ body{
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  max-width: 500px;
+  margin: auto;
 }
 .flash-screen{
   width: 100%;
